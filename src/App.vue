@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-<!--    <imgComponent/>-->
+    <h1>Hello from heroku deploy</h1>
     <hr>
     <testComponent/>
     <Map/>
