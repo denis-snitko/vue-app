@@ -9,7 +9,6 @@
     <br>
     <button @click="uploadFile">Upload</button>
     <br>
-    <button @click="loadFile">Load</button>
   </div>
 </template>
 
@@ -28,9 +27,6 @@ export default {
       this.fileInfo.fileName = this.$refs.file.files[0].name
       this.fileInfo.file = this.$refs.file.files[0]
       this.$store.dispatch('uploadFile', this.fileInfo)
-    },
-    loadFile () {
-      this.$store.dispatch('loadFile')
     }
   }
 }
